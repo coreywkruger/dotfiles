@@ -12,8 +12,17 @@ ZSH_THEME="philips"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# alias to love
+alias love="/Applications/love.app/Contents/MacOS/love"
+
 # Necessary to make rake work inside of zsh
 alias rake='noglob rake'
+
+# Alias for Sublime Text 2
+alias sbl='open -a "Sublime Text 2"'
+
+# Alias to 'ls -la'
+alias lla='ls -la'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -38,7 +47,10 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$HOME/.rbenv/bin:/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
+export PATH=$HOME/.rbenv/bin:/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:$PATH
+
+# Add Factor to path
+export PATH=/usr/local/factor:$PATH
 
 # Load rbenv
 eval "$(rbenv init -)"
