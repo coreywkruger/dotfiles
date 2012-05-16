@@ -4,10 +4,10 @@
 
 I use zsh as my shell so my configuration will reflect that. I use the following:
 
-*[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/)
-*[rbenv](https://github.com/sstephenson/rbenv)
-*[Sublime Text 2](http://www.sublimetext.com/2)
-*[Vim](http://www.vim.org/)
+* [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/)
+* [rbenv](https://github.com/sstephenson/rbenv)
+* [Sublime Text 2](http://www.sublimetext.com/2)
+* [Vim](http://www.vim.org/)
 
 ## Get the Goods
 
