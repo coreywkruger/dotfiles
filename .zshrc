@@ -47,7 +47,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$HOME/.rbenv/bin:/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:$PATH
+export PATH=$HOME/.rbenv/bin:/usr/local/share/python:/usr/local/bin:$PATH
 
 # Add Factor to path
 export PATH=/usr/local/factor:$PATH
