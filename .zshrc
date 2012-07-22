@@ -52,5 +52,8 @@ export PATH=$HOME/.rbenv/bin:/usr/local/share/python:/usr/local/bin:$PATH
 # Add Factor to path
 export PATH=/usr/local/factor:$PATH
 
+# Add Node to path
+NODE_PATH=/usr/local/lib/node_modules
+
 # Load rbenv
 eval "$(rbenv init -)"
