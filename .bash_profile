@@ -51,8 +51,8 @@ bakwht='\e[47m'   # White
 txtrst='\e[0m'    # Text Reset
 
 print_before_the_prompt () {
-    printf "\n$txtred%s: $bldgrn%s $txtpur%s\n$txtrst" "$USER" "$PWD" "$(vcprompt)"
+    printf "$txtpur[$txtylw$(~/.rvm/bin/rvm-prompt)$txtpur] $txtred%s: $bldgrn%s $txtpur%s\n$txtrst" "$USER" "$PWD" "$(vcprompt)"
 }
 
-PROMPT_COMMAND=print_before_the_prompt
-PS1='~>'
+#PROMPT_COMMAND=print_before_the_prompt
+PS1="$(print_before_the_prompt)~>"
