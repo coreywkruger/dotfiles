@@ -1,10 +1,23 @@
 " Use pathogen to easily modify the runtime path to include all
 " We don't need vi compatibility
 set nocompatible
+filetype off
 
-" Plugins under the ~/.vim/bundle directory
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+" Vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" Bundles
+Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-git'
+Bundle 'tpope/vim-rails.git'
+Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'bling/vim-airline'
 
 " Basic settings
 set nowrap        " don't wrap lines
@@ -35,7 +48,7 @@ filetype plugin indent on
 " Key remaps
 
 " Change the mapleader from \ to ,
-let mapleader=","
+let mapleader=";"
 
 " Let's remap our evil little arrow keys
 inoremap	<Up>	<NOP>
@@ -48,8 +61,10 @@ noremap		<Left>	<NOP>
 noremap		<Right>	<NOP>
 
 " CtrlP
-let g:ctrlp_map = '<leader>t'
+"let g:ctrlp_map = '<leader>t'
 
+" NERDTree
+map <C-n> :NERDTreeToggle<CR>
 
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e $HOME/.vimrc<CR>
