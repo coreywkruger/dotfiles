@@ -6,7 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="philips"
+ZSH_THEME="cloud"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -47,7 +47,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$HOME/.rbenv/bin:/usr/local/share/python:/usr/local/bin:$PATH
+export PATH=$HOME/.rbenv/bin:/usr/local/bin:$PATH
 
 # Add Factor to path
 export PATH=/usr/local/factor:$PATH
