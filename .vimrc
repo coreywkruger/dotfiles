@@ -16,7 +16,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-rails.git'
-Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'kien/ctrlp.vim'
 Bundle 'bling/vim-airline'
 
 " Basic settings
@@ -61,7 +61,7 @@ noremap		<Left>	<NOP>
 noremap		<Right>	<NOP>
 
 " CtrlP
-"let g:ctrlp_map = '<leader>t'
+let g:ctrlp_map = '<leader>t'
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
@@ -85,8 +85,8 @@ if has("mac")
   let g:main_font = "Menlo:h12"
   let g:small_font = "Menlo:h2"
 else
-  let g:main_font = "Monospace\\ 9"
-  let g:small_font = "Monospace\\ 2"
+  let g:main_font = "Inconsolata-g\\ 10"
+  let g:small_font = "Inconsolata-g\\ 10"
 endif
 
 if has("gui_running")
