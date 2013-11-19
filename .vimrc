@@ -21,7 +21,8 @@ Bundle 'bling/vim-airline'
 
 " Basic settings
 set nowrap        " don't wrap lines
-set tabstop=2     " a tab is four spaces
+set tabstop=2     " a tab is two spaces
+set expandtab			" use spaces instead of tabs
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set autoindent    " always set autoindenting on
 set copyindent    " copy the previous indentation on autoindenting
