@@ -1,23 +1,27 @@
-" Use pathogen to easily modify the runtime path to include all
+
 " We don't need vi compatibility
 set nocompatible
 filetype off
 
 " Vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " Bundles
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-git'
-Bundle 'tpope/vim-rails.git'
-Bundle 'kien/ctrlp.vim'
-Bundle 'bling/vim-airline'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-git'
+Plugin 'tpope/vim-rails.git'
+Plugin 'kien/ctrlp.vim'
+Plugin 'bling/vim-airline'
+Plugin 'tomasr/molokai'
+Plugin 'chriskempson/base16-vim'
+
+call vundle#end()
 
 " Basic settings
 set nowrap        " don't wrap lines
@@ -83,12 +87,16 @@ nnoremap <C-l> <C-w>l
 
 " GUI settings
 if has("mac")
-  let g:main_font = "Menlo:h12"
-  let g:small_font = "Menlo:h2"
+  let g:main_font = "Menlo:h9"
+  let g:small_font = "Menlo:h9"
 else
-  let g:main_font = "Inconsolata-g\\ 10"
-  let g:small_font = "Inconsolata-g\\ 10"
+  let g:main_font = "Inconsolata-g\\ 9"
+  let g:small_font = "Inconsolata-g\\ 9"
 endif
+
+syntax enable
+set background=dark
+colorscheme base16-default
 
 if has("gui_running")
   exe "set guifont=" . g:main_font
