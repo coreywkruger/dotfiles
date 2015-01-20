@@ -71,6 +71,9 @@ let g:ctrlp_map = '<leader>t'
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
+" Toggle paste mode
+set pastetoggle=<F2>
+
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e $HOME/.vimrc<CR>
 nmap <silent> <leader>sv :so $HOME/.vimrc<CR>
