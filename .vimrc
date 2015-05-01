@@ -20,6 +20,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'tomasr/molokai'
 Plugin 'chriskempson/base16-vim'
+Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
 
