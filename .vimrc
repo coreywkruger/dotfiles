@@ -20,6 +20,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'tomasr/molokai'
 Plugin 'chriskempson/base16-vim'
+Plugin 'atelierbram/vim-colors_atelier-schemes'
 Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
@@ -27,7 +28,6 @@ call vundle#end()
 " Basic settings
 set nowrap        " don't wrap lines
 set tabstop=2     " a tab is two spaces
-set expandtab			" use spaces instead of tabs
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set autoindent    " always set autoindenting on
 set copyindent    " copy the previous indentation on autoindenting
@@ -94,18 +94,18 @@ if has("mac")
   let g:main_font = "Menlo:h9"
   let g:small_font = "Menlo:h9"
 else
-  let g:main_font = "Inconsolata-g\\ 9"
-  let g:small_font = "Inconsolata-g\\ 9"
+  let g:main_font = "Fira\\ Mono\\ 9"
+  let g:small_font = "Fira\\ Mono\\ 9"
 endif
 
 syntax enable
-set background=dark
-colorscheme base16-default
+set background=light
+colorscheme base16-atelierforest
 
 if has("gui_running")
   exe "set guifont=" . g:main_font
-  set background=dark
-  colorscheme molokai
+  set background=light
+  colorscheme base16-atelierforest
   " No toolbars
   set guioptions-=T
 endif
