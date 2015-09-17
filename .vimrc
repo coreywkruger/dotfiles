@@ -23,6 +23,7 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'atelierbram/vim-colors_atelier-schemes'
 Plugin 'rust-lang/rust.vim'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 
@@ -101,7 +102,7 @@ endif
 
 syntax enable
 set background=light
-colorscheme holokai 
+colorscheme molokai 
 
 if has("gui_running")
   exe "set guifont=" . g:main_font
