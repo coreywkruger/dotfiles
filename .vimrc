@@ -24,6 +24,7 @@ Plugin 'atelierbram/vim-colors_atelier-schemes'
 Plugin 'rust-lang/rust.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'pangloss/vim-javascript'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 
